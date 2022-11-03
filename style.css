@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+Body {
+  background-color: #cccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgba(129, 133, 140, 0.5);
+}
+h1 {
+  background-color: rgba(129, 133, 140, 0.5);
+  display: block;
+  font-size: 3rem;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  border: none;
+}
+h2 {
+  padding: 5px;
+  margin: 1vw;
+}
+/* ul:hover {
+  border-width: 4px;
+  border-color: purple;
+  background-color: aqua;
+  border-style: solid;
+} */
+p {
+  font-size: 1.5rem;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+.firstp {
+  transition: background-color 0.2s, border-width 0.2s;
+}
+.firstp:hover {
+  background-color: rgba(129, 133, 140, 0.5);
+  border-style: dashed;
+  border-color: black;
+  border-width: 2px;
+}
+
+ul {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+li {
+  font-size: 1.5rem;
+  margin-top: 5px;
+  margin-left: 1vw;
+  font-weight: normal;
+}
+.secdetails {
+  margin-top: 1vw;
+}
+summary {
+  font-size: 1.5rem;
+}
+
+p2 {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 10px;
+  float: right;
+}
+
+img {
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.gtr {
+  margin-right: auto;
+  width: 50%;
+  float: left;
+}
+.porsche {
+  margin-right: auto;
+  width: 50%;
+  float: right;
+}
+
+summary:hover {
+  background-color: rgba(129, 133, 140, 0.5);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  font-weight: bold;
+}
+details {
+  display: inline-block;
+  margin-left: 1vw;
+  transition: background-color 0.45s, font-weight 0.15s;
+}
+
+button {
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border-color: black;
+  border-width: 1.5px;
+  border-radius: 4px;
+}
+input:hover {
+  background-color: rgba(106, 228, 249, 0.76);
+  border-color: rgb(38, 157, 248);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+footer {
+  margin: 1vw;
+}
