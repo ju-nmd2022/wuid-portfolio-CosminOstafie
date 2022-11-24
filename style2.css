@@ -5,6 +5,27 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
+.nav {
+  background-color: rgb(233, 150, 122);
+  overflow: hidden;
+  display: flex;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav a:hover {
+  background-color: rgba(256, 150, 128, 0.7);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  font-weight: bolder;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
 input {
   border-color: black;
   border-width: 1.5px;
@@ -24,7 +45,7 @@ form {
 }
 
 .header1 {
-  background-color: rgba(129, 133, 140, 0.5);
+  background-color: rgb(233, 150, 122);
   font-weight: bold;
   font-size: 2vw;
   padding: 10px;
@@ -32,7 +53,7 @@ form {
   justify-content: center;
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
-  color: lightcoral;
+  color: white;
   text-shadow: 2px 2px rgba(66, 61, 61, 0.8);
   text-underline-offset: 5px;
 }

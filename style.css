@@ -3,32 +3,76 @@
   padding: 0;
 }
 Body {
-  background-color: #cccc;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-header {
-  background-color: rgba(129, 133, 140, 0.5);
+.header1 {
+  background-color: darksalmon;
+  font-size: 2.5vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 4px rgba(0, 0, 0, 0.3);
 }
+.header1 {
+  animation-name: myrotate;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  color: black;
+}
+
+@keyframes myrotate {
+  from {
+    transform: rotateX(360deg);
+    height: 100%;
+  }
+  to {
+    transform: rotateX(0deg);
+    height: 300%;
+  }
+}
+
+.nav {
+  background-color: rgb(233, 150, 122);
+  overflow: hidden;
+  display: flex;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.nav a:hover {
+  background-color: rgba(256, 150, 128, 0.7);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  font-weight: bolder;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+}
+
 h1 {
-  background-color: rgba(129, 133, 140, 0.5);
+  background-color: rgb(233, 150, 122);
   display: block;
   font-size: 3rem;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   width: 100%;
   border: none;
+  text-align: center;
+  color: white;
 }
 h2 {
   padding: 5px;
   margin: 1vw;
 }
-/* ul:hover {
-  border-width: 4px;
-  border-color: purple;
-  background-color: aqua;
-  border-style: solid;
-} */
+
 p {
   font-size: 1.5rem;
   margin-left: 1vw;
@@ -121,4 +165,38 @@ form {
 }
 footer {
   margin: 1vw;
+}
+
+.contact {
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes mymove {
+  0% {
+    transform: translateX(0%);
+    color: deepskyblue;
+    font-size: 30px;
+  }
+  25% {
+    transform: translateX(40%);
+    color: orange;
+  }
+  50% {
+    transform: translateX(80%);
+    color: deepskyblue;
+    font-size: 24px;
+  }
+  75% {
+    transform: translate(40%);
+    font-size: 24px;
+    color: orange;
+  }
+  100% {
+    transform: translateX(0%);
+    color: deepskyblue;
+    font-size: 30px;
+  }
 }
